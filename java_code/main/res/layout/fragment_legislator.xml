@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zhenguo.my_example.LegislatorFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true">
+        </android.support.design.widget.TabLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--</FrameLayout>-->
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpage1"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content">
+
+                </android.support.v4.view.ViewPager>
+                <!--<sidebar>-->
+                <LinearLayout
+                    android:id="@+id/side_index"
+                    android:layout_width="80dp"
+                    android:layout_height="fill_parent"
+                    android:background="#c3c3c3"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>
